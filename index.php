@@ -36,7 +36,7 @@
 					<a href="index.html">Home</a>
 				</p>
 				<p>
-					<a href="/project_one/home1.html">Project One</a>
+					<a href="part1.html">Part One</a>
 				</p>
 				<p>
 					<a href="/project_two/home2.html">Project Two</a>
