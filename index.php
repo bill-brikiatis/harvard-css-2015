@@ -33,13 +33,13 @@
 			</header>
 			<nav>
 				<p>
-					<a href="index.html">Home</a>
+					<a href="index.php">Home</a>
 				</p>
 				<p>
 					<a href="part1.html">Part One</a>
 				</p>
 				<p>
-					<a href="/project_two/home2.html">Project Two</a>
+					<a href="/project_two/home2.html">Part Three</a>
 				</p>
 				
 				<p>
