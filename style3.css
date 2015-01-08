@@ -1,0 +1,50 @@
+/* 
+Styles for Checking Part3
+Bill Brikiatis, brikiatis@g.harvard.edu
+*/
+
+p[id="warning"]{
+	color: red;
+}
+
+#wrapper p:not(.myClass){
+	color: red;
+}
+
+h2.subhead > a:link{
+	color: red;
+}
+
+#sithLord.darthVader.darthMaul{
+	color: red;
+}
+
+a.captain.picard * strong{
+	color: red;
+}
+
+em[title]:first-child{
+	color: red;
+}
+
+main p:first-letter{
+	color: red;
+}
+
+p#warning{
+	color: blue;
+}
+
+span.danger strong em a:hover{
+	color: red;
+}
+
+blockquote.service cite[title*="quote"]{
+	color: red;
+}
+
+
+
+
+
+
