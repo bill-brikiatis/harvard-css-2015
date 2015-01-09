@@ -52,19 +52,19 @@ main{
 	margin-top: 168px;
 }
 
-main article{
+main article:nth-of-type(1){
 	float:right;
 	width: 520px;
 	border-right:1px solid grey;
 }
 
-main aside{
+main article:nth-of-type(2){
 	float: right;
 	width: 159px;
 	margin-right: 20px;
 }
 
-main aside p::first-line{
+main article:nth-of-type(2) p::first-line{
 	font-weight: 700;
 }
 
