@@ -761,6 +761,24 @@ aside > article:last-of-type h4 {
     float: none;
     text-align: center;
   }
+
+  header a img {
+    float: none;
+    width: 156px;
+    height: 83px;
+  }
+
+  header a {
+    display: block;
+    margin: 0 auto;
+    width: 156px;
+    height: 83px;
+  }
+
+  /* header nav{
+  	display:block;
+  	width:
+  } */
 }
 
 /*# sourceMappingURL=application.css.map */

@@ -3,9 +3,28 @@
 
 
 @media only screen and (max-width: 750px) {
-	.social{
-		float: none;
-		text-align:center;
-	}
+	
+.social{
+	float: none;
+	text-align:center;
+}
+
+header a img{
+	float:none;
+	width:156px;
+	height:83px;
+}
+
+header a{
+	display:block;
+	margin:0 auto;
+	width:156px;
+	height:83px;
+}
+
+/* header nav{
+	display:block;
+	width:
+} */
 
 }
