@@ -400,6 +400,7 @@ th {
 
 /* Stripe2, nav bar, footer */
 /* Stripe1 */
+/* Home Page Styles */
 .stripe1 {
   display: block;
   font-family: "PT Sans", sans-serif;
@@ -436,7 +437,7 @@ th {
 }
 
 .stripe2 > div {
-  width: 990px;
+  max-width: 990px;
   height: 30px;
   margin: 0 auto;
 }
@@ -462,7 +463,7 @@ header {
   font-size: 18px;
 }
 
-header > img {
+header > a > img {
   float: left;
   width: 17%;
   padding-top: 25px;
@@ -639,6 +640,127 @@ footer a {
   width: 800px;
   margin-left: 20px;
   font-family: "PT Sans", sans-serif;
+}
+
+/* Blog Single Page Styles */
+/* 1 column with 20px inbetween */
+.col-1 {
+  /*width: 145px;*/
+  width: 14.64646%;
+  float: left;
+  /*margin-right:20px*/
+  margin-right: 2.02020%;
+}
+
+/* 4 columns with 20px inbetween */
+.col-1-4 {
+  /* width: 640px; */
+  width: 64.64646%;
+  float: left;
+  /* margin-right: 20px; */
+  margin-right: 2.02020%;
+}
+
+main > article.post {
+  position: relative;
+  top: 0;
+  /* left:145px; */
+  left: 16.66666%;
+}
+
+.sub {
+  position: relative;
+  top: 0;
+  /* right:680px; */
+  right: 66.66666%;
+}
+
+.sub h2 {
+  background-color: #3366cc;
+  color: #fff;
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+
+.sub ol {
+  padding: 0;
+}
+
+.sub li {
+  list-style-type: none;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+}
+
+.sub a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+}
+
+.post h1, .post h3 {
+  text-transform: capitalize;
+}
+
+.post h1 {
+  font-family: "Patrick Hand", cursive;
+  font-size: 40px;
+  color: #006666;
+}
+
+.post h3 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  color: #3366cc;
+}
+
+.post p, .post li {
+  font-family: "PT Sans", sans-serif;
+  color: #666666;
+  font-size: 15px;
+}
+
+aside > article > h2, aside > h2 {
+  font-family: "Patrick Hand", cursive;
+  color: #006666;
+  font-size: 30px;
+  text-transform: capitalize;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+
+aside > article > ul {
+  padding: 0;
+}
+
+aside article li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+aside article a[href^="http"], aside article a, aside article a[href^="http"]:visited {
+  text-decoration: none;
+  color: #ff6633;
+  text-transform: capitalize;
+}
+
+aside > article:last-of-type {
+  border: 1px solid #666666;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+aside > article:last-of-type h4 {
+  text-transform: capitalize;
+}
+
+/* Vertical Phone Styles */
+/* Vertical Phone Styles */
+@media only screen and (max-width: 750px) {
+  .social {
+    float: none;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */
