@@ -69,13 +69,17 @@ header>a>img{
 	padding-top:25px;
 }
 
-header>nav>ol{
+.mobile span{
+	display:none;
+}
+
+header div nav>ol{
 	list-style-type: none;
 	margin-bottom:0 !important;
 	margin-top:0;
 }
 
-header>nav{
+header nav{
 	float:right;
 	text-align:right;
 	width:83%;
@@ -361,10 +365,6 @@ aside>article:last-of-type{
 aside>article:last-of-type h4{
 	text-transform: capitalize;
 }
-
-/* Vertical Phone Styles */
-
-
 
 
 

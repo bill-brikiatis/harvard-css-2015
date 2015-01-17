@@ -15,16 +15,85 @@ header a img{
 	height:83px;
 }
 
+header{
+	border-bottom:none;
+}
+
 header a{
 	display:block;
 	margin:0 auto;
 	width:156px;
 	height:83px;
+	padding-bottom:50px;
 }
 
-/* header nav{
+header div nav>ol{
+	display:none;
+}
+
+header nav{
+	display:none;
+}
+	
+header nav a{
+	display:none;
+}
+
+nav.phone{
 	display:block;
-	width:
-} */
+	color:#fff;
+	/* background-color:$ft_color; */
+	padding:0;
+}
+
+nav.phone a{
+	display:block;
+	color:#000;
+	width:95%;
+	height:25px;
+	margin: 0 auto;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+}
+
+.banner {
+	display:none;
+}
+
+.mobile{
+	background-color:$ft_color;
+	color:#fff;
+	font-family:$pt_sans;
+	width:95%;
+	height:50px;
+	margin:0 auto;
+}
+
+.mobile span:first-of-type{
+	display:block;
+	float:left;
+	font-family:$pat_hand;
+	font-size:1.75em;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.mobile span:last-of-type{
+	display:block;
+	float:right;
+	font-family:$pat_hand;
+	font-size:3em;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.col-1-1{
+	display:block;
+	width:95%;
+	margin:2.5%;
+}
+
+
 
 }
