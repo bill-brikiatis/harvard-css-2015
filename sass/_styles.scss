@@ -206,6 +206,40 @@ div.banner div:last-of-type a h3{
 	padding-bottom:22px;
 }
 
+.news{
+	margin-bottom:20px;
+}
+
+footer{
+	clear: both;
+	background-color:$ft_color;
+	color:#fff;
+	text-transform:capitalize;
+	font-family:$pat_hand;
+}
+
+footer h4{
+	margin:10px 0 0 40px;
+}
+
+footer ol{
+	list-style-type: none;
+}
+
+footer a {
+	text-decoration:none;
+	color:#fff;
+}
+
+.c{
+	clear:both;
+	width:800px;
+	margin-left:20px;
+	font-family:$pt_sans;
+}
+
+
+
 
 
 
