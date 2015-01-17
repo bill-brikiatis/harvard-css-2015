@@ -849,6 +849,14 @@ aside > article:last-of-type h4 {
     width: 95%;
     margin: 2.5%;
   }
+
+  main > article.post {
+    left: 0;
+  }
+
+  .remove {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */
