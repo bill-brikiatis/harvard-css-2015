@@ -896,6 +896,10 @@ aside > article:last-of-type h4 {
     position: static;
     float: left;
   }
+
+  col-1 {
+    width: 29%;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */
