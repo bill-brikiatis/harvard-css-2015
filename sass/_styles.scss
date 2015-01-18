@@ -79,8 +79,9 @@ nav.phone{
 
 header div nav>ol{
 	list-style-type: none;
-	margin-bottom:0 !important;
-	margin-top:0;
+	margin-bottom:0px !important;
+	margin-top:10px;
+	padding-top:10px;
 }
 
 header nav{
@@ -91,18 +92,21 @@ header nav{
 
 }
 
-header nav a{
+header nav li{
 	display:inline-block;
-	text-decoration:none;
-	padding:10px 10px 0 10px;
-	color:$ft_color;
 	text-transform:capitalize;
 	font-weight:bold;
 }
 
-header nav a:hover, header nav a:active {
+header nav a{
+	text-decoration:none;
+	color:$ft_color;
+	padding:20px 10px 50px;
+}
+
+header nav li a:hover, header nav il a:active {
 	color:#fff;
-	background:url('../img/image_desktop/nav_highlight_dt.png') no-repeat center -10px;
+	background:url('../img/image_desktop/nav_highlight_dt.png') no-repeat center 10px;
 	height:45px;
 }
 
