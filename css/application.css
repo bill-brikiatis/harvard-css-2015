@@ -899,6 +899,10 @@ aside > article:last-of-type h4 {
   #ipad_remove {
     display: none;
   }
+
+  col-1-2 {
+    width: 45.95959%;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */
