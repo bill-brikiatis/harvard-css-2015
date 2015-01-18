@@ -556,6 +556,14 @@ div.banner div:last-of-type a h3 {
   margin: 20px 0 0 20px;
 }
 
+div#takeout {
+  background-image: url("img/image_desktop/glasses_100_ipad.png") no-repeat left;
+}
+
+div#resize {
+  display: none;
+}
+
 /* 3 items */
 .col-1-2 {
   /*width:305px;*/
@@ -878,6 +886,10 @@ aside > article:last-of-type h4 {
 
   .page_center {
     max-width: 751px;
+  }
+
+  .sub {
+    display: none;
   }
 }
 
