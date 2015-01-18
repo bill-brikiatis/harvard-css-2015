@@ -900,7 +900,7 @@ aside > article:last-of-type h4 {
     display: none;
   }
 
-  col-1-2 {
+  .col-1-2 {
     width: 45.95959%;
   }
 }
