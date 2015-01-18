@@ -109,10 +109,9 @@ main > article.post{
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 751px) 
-and (max-device-width : 1024px) {
-/* Styles */
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
 
 .stripe2>div{
 	max-width:751px;
@@ -121,6 +120,8 @@ and (max-device-width : 1024px) {
 .page_center{
 	max-width: 751px;
 }
+
+
 
 .sub {
 	display:none;
@@ -133,6 +134,10 @@ main > article.post{
 
 .col-1{
 	width:29%;
+}
+
+.news article img{
+	width: 90px !important;
 }
 
 }
