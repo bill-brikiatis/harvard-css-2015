@@ -891,6 +891,11 @@ aside > article:last-of-type h4 {
   .sub {
     display: none;
   }
+
+  main > article.post {
+    position: static;
+    float: left;
+  }
 }
 
 /*# sourceMappingURL=application.css.map */

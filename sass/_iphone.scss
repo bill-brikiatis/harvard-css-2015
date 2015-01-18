@@ -126,4 +126,9 @@ and (max-device-width : 1024px) {
 	display:none;
 }
 
+main > article.post{
+	position:static;
+	float:left;
+}
+
 }
