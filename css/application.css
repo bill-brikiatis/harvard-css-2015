@@ -893,7 +893,11 @@ aside > article:last-of-type h4 {
   }
 
   .news article img {
-    width: 90px !important;
+    width: 90px;
+  }
+
+  #ipad_remove {
+    display: none;
   }
 }
 

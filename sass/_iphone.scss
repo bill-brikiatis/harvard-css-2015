@@ -121,8 +121,6 @@ main > article.post{
 	max-width: 751px;
 }
 
-
-
 .sub {
 	display:none;
 }
@@ -137,7 +135,11 @@ main > article.post{
 }
 
 .news article img{
-	width: 90px !important;
+	width: 90px;
+}
+
+#ipad_remove{
+	display:none;
 }
 
 }
