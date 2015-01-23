@@ -1,0 +1,402 @@
+/* Border box declaration */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+	background-color: lightgray;
+	font-size: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	color: #225265;
+}
+a:hover {
+	text-decoration: none;
+}
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+	background-color: #fff;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	/* Drop shadow found on CSS Tricks http://css-tricks.com/almanac/properties/b/box-shadow/ */
+	-webkit-box-shadow: 3px 3px 5px 6px darkgray;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  	-moz-box-shadow:    3px 3px 5px 6px darkgray;  /* Firefox 3.5 - 3.6 */
+  	box-shadow:         3px 3px 5px 6px darkgray;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+header {
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	background-color: #15333F;
+	font-style: italic;
+	text-align: right;
+}
+header h1 {
+	padding: 0.5em;
+	margin: 0;
+	font-size:1.25em; /* Start with smaller */
+}
+header h1 a {
+	color: white;
+	text-decoration: none;
+}
+/*nav {
+	background-color: #15333F;
+	text-align: center;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+nav ul li {
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+}
+nav ul a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: .5em 1em;
+	float: left;
+}
+nav ul a:hover {
+	color: #B2CCE5;
+}*/
+
+/* Responsive Menu tutorial found at http://webdesignerwall.com/tutorials/css-responsive-navigation-menu */
+/* nav */
+.nav {
+	position: relative;
+	margin: 0;
+	z-index: 1;
+	text-align: center;
+	background-color: #15333F;
+	font-family: 'Roboto', sans-serif;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	padding: .313em;
+	list-style: none;
+	display: inline-block;
+}
+.nav a {
+	padding: .188px .75px;
+	text-decoration: none;
+	color: #B2CCE5;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: white;
+}
+.nav .current a {
+	color: white;
+}
+main {
+	overflow: auto;
+	padding-left: 3em;
+	background-color: #B2CCE5;
+}
+main h2 {
+	font-size: 3em;
+	padding-top: 1em;
+}
+main p {
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+}
+div img {
+	width: 100%;
+}
+main img {
+	float: right;
+	margin-right: 1em;
+	margin-left: 1.875em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: 1px solid black;
+	width: auto;
+}
+article {
+	padding: 0 1em;
+	font-family: 'Roboto', sans-serif;
+}
+article h3 {
+	font-family: 'Roboto Slab', Times, serif;
+}
+footer {
+	padding: 0;
+	margin: 0;
+	color: #999;
+	text-align: center;
+	border: 1px solid black;
+}
+
+footer p {
+	background-color: #15333F;
+	color: white;
+	font-size: 1em;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+/* inside.html styles */
+article img {
+	float: right;
+	margin-left: 1.875em;
+	width: 100%;
+	max-width: 300px;
+}
+aside.col-1-4 {
+	background-color: #B2CCE5;
+	padding: 0 0.5em;
+}
+aside h3 {
+	font-size: 1.25em;
+}
+aside ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+aside li {
+	margin: 0 0 2.25em 0;
+	border: 1px solid #15333F;
+	color: black;
+	background-color: darkgray;
+	padding: 0.75em;
+	font-family: 'Roboto Slab', Times, serif;
+	font-style: italic;
+}
+aside li a {
+	color: #15333F;
+}
+blockquote {
+	font-family: 'Roboto Slab', Times, serif;
+	font-style: italic;
+}
+blockquote ~ blockquote p {
+	font-size: 1.5em;
+}
+blockquote ~ blockquote cite {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-size: 0.75em;
+}
+/* this line places an &mdash; before the citation.
+Property "content" doesn't understand &mdash; but it does
+understand the unicode version. To get translation of 
+special characters to unicode or HTML entity,
+see http://www.w3schools.com/charsets/ref_utf_punctuation.asp */
+blockquote ~ blockquote cite::before {
+	content: "\2014  ";
+}
+
+/* grid system */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+}
+.col-1-2,
+.col-1-4 {
+	width: 25%;
+}
+.col-2 {
+	width: 50%;
+}
+.col-3 {
+	width: 75%;
+}
+.col-4 {
+	width: 100%;
+}
+
+/* Mobile First Styles */
+
+/* @media only screen and (min-width: 961px) {
+
+	header h1 {
+		font-size: 2.5em;
+	}
+}
+
+Navigation Menu
+Responsive Menu tutorial found at http://webdesignerwall.com/tutorials/css-responsive-navigation-menu
+@media screen and (max-width: 960px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+	}
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px black;
+		background: #fff url(../img/menu.png) no-repeat 7px 6px;
+	}
+	.nav li {
+		display: none; hide all <li> items
+		margin: 0;
+	}
+	.nav .current {
+		display: block; show only current <li> item
+	}
+	.nav a {
+		display: block;
+		padding: 0 0 0 32px;
+		text-align: left;
+		color: #15333F;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+
+	on nav hover
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav a:hover {
+		color: #B2CCE5;
+	}
+	.nav ul:hover .current {
+		background: url(../img/check.png) no-repeat 7px 3px;
+	}
+} */
+
+/* @media only screen and (min-width: 684px) and (max-width:960px) {  Was 960 px max-width
+	.col-1-2 {
+		width: 50%;
+	}
+	header h1 {
+		font-size: 2em;
+	}
+	.wrapper {
+		width: 100%;
+	}
+	main h2 {
+		font-size: 2em;
+		padding-top: 0;
+	}
+	main p {
+		font-size: 1em;
+	}
+	article p {
+		font-size: 1em;
+	}
+	article img {
+	float: none;
+	margin-left: 1.875em;
+	width: 100%;
+	max-width: 225px;
+}
+}
+
+@media only screen and (min-width:430px) and (max-width: 684px) {
+	[class*='col-'] {
+		margin: 0;
+		width: 100%;
+	}
+	header h1 {
+		font-size: 1.5em;
+	}
+	article img {
+	float: right;
+	margin-left: 1.875em;
+	width: 100%;
+	max-width: 225px;
+}
+
+@media only screen and (max-width: 570px) {
+	main h2 {
+		font-size: 1.5em;
+	}
+	main img {
+		float: none;
+		margin: 0;
+	}
+	main {
+		padding: 2em;
+	}
+
+} */
+
+/* Navigation Menu
+Responsive Menu tutorial found at http://webdesignerwall.com/tutorials/css-responsive-navigation-menu
+@media screen and (max-width: 960px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+	}
+	.nav ul {
+		width: 180px;
+		padding: 5px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: solid 1px black;
+		background: #fff url(../img/menu.png) no-repeat 7px 6px;
+	}
+	.nav li {
+		display: none; hide all <li> items
+		margin: 0;
+	}
+	.nav .current {
+		display: block; show only current <li> item
+	}
+	.nav a {
+		display: block;
+		padding: 0 0 0 32px;
+		text-align: left;
+		color: #15333F;
+	}
+	.nav .current a {
+		background: none;
+		color: #666;
+	}
+
+	on nav hover
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	.nav a:hover {
+		color: #B2CCE5;
+	}
+	.nav ul:hover .current {
+		background: url(../img/check.png) no-repeat 7px 3px;
+	}
+} */
